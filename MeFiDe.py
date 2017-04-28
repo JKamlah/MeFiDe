@@ -9,7 +9,6 @@
 #Date:     **28.04.2017**
 
 ####################### IMPORT ##################################
-
 import os
 import re
 
@@ -17,11 +16,11 @@ import re
 source_typ = 'Voc'
 year_start = 1956
 year_end = 1978
-word_min_len =1
-"""Start of the main-function
-Iterate over the years"""
+word_min_len = 1
 
 ####################### MAIN ###################################
+"""Start of the main-function
+Iterate over the years"""
 for i in range(year_start, year_end):
     """Open Textfile"""
     txt_file = open("U:\\Eigene Dokumente\\Aktienfuehrer_Dokumente\\Aktienfuehrer_PostOCR_Format\\%d\\%s_%d.txt" % (i,source_typ,i), 'r')
